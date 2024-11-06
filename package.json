@@ -1,0 +1,12 @@
+{
+  "name": "teachify",
+  "version": "1.0.0",
+  "description": "This project is a tutoring website built using the MERN stack (MongoDB, Express, React, Node.js) designed to connect students with qualified tutors, inspired by TeacherOn. Key features include user authentication, tutor profiles, session booking, a review system, and real-time messaging.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
