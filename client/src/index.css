@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.contain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.first-h h1 {
+    font-size: 30px;
+    color: #ABBED1;
+}
+.second-h h1 {
+    font-size: 40px;
+    color: #89a5c0;
+}
+.c {
+    align-items: center;
+}
+.one {
+    font-size: 20px;
+    font-weight: 700;
+ 
+}
