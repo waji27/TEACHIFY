@@ -26,3 +26,36 @@
     font-weight: 700;
  
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containerr {
+    width: 100vw;
+    height: 80vh;
+    /* border: 1px solid black; */
+    display: flex;
+
+}
+
+.pg-l {
+  width: 40vw;
+    height: auto;
+
+}
+.pg-l img {
+    height: 400px;
+}
+.pg-r {
+    width: 70vw;
+    /* border: 1px solid black; */
+    display: flex;
+   align-items: center;
+    /* flex-direction: column; */
+}
+.pg-r h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
