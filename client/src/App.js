@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Login from './pages/Auth/Login';
 import Signup from './pages/Auth/Signup';
+import TeacherCard from './components/all-tutors'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/all-tutors" element={<TeacherCard />} />
       </Routes>
     </>
 
