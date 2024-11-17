@@ -100,6 +100,11 @@
     flex-direction: column;
     justify-content: center;
     /* opacity: 80%; */
+    backdrop-filter: blur(1px) saturate(80%);
+    -webkit-backdrop-filter: blur(1px) saturate(80%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
     
 
 }
@@ -211,4 +216,30 @@ opacity: 70%;
 #first_name, #last_name {
     width: 200px; 
     background-color: white;
+}
+
+.log {
+    width: 90%;
+    background-color: #003161;
+    border: 1px solid gray;
+    margin: 0 auto;
+    
+}
+.sp {
+    margin: 0 auto;
+    position: relative;
+    margin-left: 32%;
+}
+.t-center {
+    position: relative;
+    text-align: center;
+}
+.cen {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.form-con {
+    border: 1px solid black;
+    
 }
