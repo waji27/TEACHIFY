@@ -7,8 +7,8 @@ import raf from '../assets/rafiki.png'
 function Home() {
   return (
     <Layout>
-      <div className="containerr">
-        <div className="pg-l">
+      <div className="containerr flex flex-nowrap">
+        <div className="pg-l sm:w-100 lg:w-80">
           <img src={raf} alt="image" />
         </div>
         <div className="pg-r" data-aos="">

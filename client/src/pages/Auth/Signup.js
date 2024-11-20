@@ -1,175 +1,197 @@
 import React from "react";
 import Layout from "../../components/Layout";
-import styled from 'styled-components';
-
 
 const Signup = () => {
   return (
-    <Layout >
-      <StyledWrapper>
-        <form className="form">
-          <p className="title">Register </p>
-          <p className="message">Signup now and get full access to our app. </p>
-          <div className="flex">
-            <label>
-              <input required placeholder type="text" className="input" />
-              <span>Firstname</span>
+    <Layout>
+      <form className=":w-[50vw] mx-auto md:w-[80vh]  signup-card ">
+        <div className="h-20 w-full  flex justify-center  "><h1 className="text-4xl mt-5">SignUp as a Teacher</h1></div>
+        <div class="grid gap-6 mb-6 md:grid-cols-2 ">
+          <div> 
+            <label
+              for="first_name"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >
+              First name
             </label>
-            <label>
-              <input required placeholder type="text" className="input" />
-              <span>Lastname</span>
-            </label>
+            <input
+              type="text"
+              id="first_name"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="First Name"
+              required
+            />
           </div>
-          <label>
-            <input required placeholder type="email" className="input" />
-            <span>Email</span>
+          <div>
+            <label
+              for="last_name"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >
+              Last name
+            </label>
+            <input
+              type="text"
+              id="last_name"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="age"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >
+              Age
+            </label>
+            <input
+              type="number"
+              id="age"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Age"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="phone"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >
+              Phone number
+            </label>
+            <input
+              type="tel"
+              id="phone"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="123-45-678"
+              pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="Location"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >
+              Location
+            </label>
+            <input
+              type="url"
+              id="Location"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Karachi, Pakistan"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="Experience"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >
+              Experience
+            </label>
+            <input
+              type="text"
+              id="Experience"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="2 Years"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="Experience"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >
+              Experience
+            </label>
+            <input
+              type="text"
+              id="Experience"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="2 Years"
+              required
+            />
+          </div>
+        </div>
+        <div class="mb-6">
+          <label
+            for="email"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >
+            Email address
           </label>
-          <label>
-            <input required placeholder type="password" className="input" />
-            <span>Password</span>
+          <input
+            type="email"
+            id="email"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="john.doe@company.com"
+            required
+          />
+        </div>
+        <div class="mb-6">
+          <label
+            for="password"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >
+            Password
           </label>
-          <label>
-            <input required placeholder type="password" className="input" />
-            <span>Confirm password</span>
+          <input
+            type="password"
+            id="password"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="•••••••••"
+            required
+          />
+        </div>
+        <div class="mb-6">
+          <label
+            for="confirm_password"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >
+            Confirm password
           </label>
-          <button className="submit">Submit</button>
-          <p className="signin">Already have an acount ? <a href="#">Signin</a> </p>
-        </form>
-
-      </StyledWrapper>
-
+          <input
+            type="password"
+            id="confirm_password"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="•••••••••"
+            required
+          />
+        </div>
+        <div class="flex items-start mb-6">
+          <div class="flex items-center h-5">
+            <input
+              id="remember"
+              type="checkbox"
+              value=""
+              class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800"
+              required
+            />
+          </div>
+          <label
+            for="remember"
+            class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+          >
+            I agree with the{" "}
+            <a
+              href="#"
+              class="text-blue-600 hover:underline dark:text-blue-500"
+            >
+              terms and conditions
+            </a>
+            .
+          </label>
+        </div>
+        <button
+          type="submit"
+          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >
+          Submit
+        </button>
+      </form>
     </Layout>
   );
 };
-const StyledWrapper = styled.div`
-  .form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 500px;
-    background-color: #fff;
-    // padding: 20px;
-    border-radius: 20px;
-    position: relative;
-  }
 
-  .title {
-    font-size: 28px;
-    color: royalblue;
-    font-weight: 600;
-    letter-spacing: -1px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding-left: 30px;
-  }
-
-  .title::before,.title::after {
-    position: absolute;
-    content: "";
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    left: 0px;
-    background-color: royalblue;
-  }
-
-  .title::before {
-    width: 18px;
-    height: 18px;
-    background-color: royalblue;
-  }
-
-  .title::after {
-    width: 18px;
-    height: 18px;
-    animation: pulse 1s linear infinite;
-  }
-
-  .message, .signin {
-    color: rgba(88, 87, 87, 0.822);
-    font-size: 14px;
-  }
-
-  .signin {
-    text-align: center;
-  }
-
-  .signin a {
-    color: royalblue;
-  }
-
-  .signin a:hover {
-    text-decoration: underline royalblue;
-  }
-
-  .flex {
-    display: flex;
-    width: 100%;
-    gap: 6px;
-  }
-
-  .form label {
-    position: relative;
-  }
-
-  .form label .input {
-    width: 100%;
-    padding: 10px 10px 20px 10px;
-    outline: 0;
-    border: 1px solid rgba(105, 105, 105, 0.397);
-    border-radius: 10px;
-  }
-
-  .form label .input + span {
-    position: absolute;
-    left: 10px;
-    top: 15px;
-    color: grey;
-    font-size: 0.9em;
-    cursor: text;
-    transition: 0.3s ease;
-  }
-
-  .form label .input:placeholder-shown + span {
-    top: 15px;
-    font-size: 0.9em;
-  }
-
-  .form label .input:focus + span,.form label .input:valid + span {
-    top: 30px;
-    font-size: 0.7em;
-    font-weight: 600;
-  }
-
-  .form label .input:valid + span {
-    color: green;
-  }
-
-  .submit {
-    border: none;
-    outline: none;
-    background-color: royalblue;
-    padding: 10px;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 16px;
-    transform: .3s ease;
-  }
-
-  .submit:hover {
-    background-color: rgb(56, 90, 194);
-  }
-
-  @keyframes pulse {
-    from {
-      transform: scale(0.9);
-      opacity: 1;
-    }
-
-    to {
-      transform: scale(1.8);
-      opacity: 0;
-    }
-  }`;
 export default Signup;
