@@ -1,4 +1,5 @@
 import React from 'react'
+import Layout from './Layout'
 
 export default function TeacherCard({
   name = "Jane Doe",
@@ -12,7 +13,8 @@ export default function TeacherCard({
   isOffline = true
 }) {
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+      <Layout>
+    <div className="max-w-sm rounded overflow-hidden shadow-lg bg-black">
       <div className="px-6 py-4">
         <div className="flex items-center mb-4">
           <img className="w-20 h-20 rounded-full object-cover mr-4" src={imageUrl} alt={name} />
@@ -47,5 +49,7 @@ export default function TeacherCard({
         ))}
       </div>
     </div>
+    </Layout>
+
   )
 }
