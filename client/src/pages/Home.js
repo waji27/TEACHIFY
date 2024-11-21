@@ -3,8 +3,23 @@ import Layout from "../components/Layout";
 import Carousel from "../components/Carousel";
 import brick from '../assets/bricks.jpg'
 import raf from '../assets/rafiki.png'
+import Typed from 'typed.js';
 
 function Home() {
+  const el = React.useRef(null);
+
+  React.useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ['Connecting Knowledge Seekers with Passionate Educators.',  'Find the Right Teacher for Your Learning Journey', 'Transforming Education with a Click.'],
+      typeSpeed: 60,
+    });
+
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <Layout>
       <div className="containerr flex flex-nowrap">
@@ -13,7 +28,7 @@ function Home() {
         </div>
         <div className="pg-r" data-aos="">
           <div className="midd">
-            <h1>Welcome to Teachify – A New Way to Connect with Educators!</h1>
+            <h1 ref={el}>Welcome to Teachify – A New Way to Connect with Educators!</h1>
             <p>
               Teachify is an innovative platform designed to bridge the gap
               between students seeking knowledge and teachers eager to share
