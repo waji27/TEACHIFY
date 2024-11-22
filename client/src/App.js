@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Login from './pages/Auth/Login';
 import Signup from './pages/Auth/Signup';
-import TeacherCard from './components/all-tutors'
+import TeacherCard from './pages/all-tutors'
 
 function App() {
   return (
