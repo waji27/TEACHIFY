@@ -4,7 +4,7 @@ import Layout from "../../components/Layout";
 const Signup = () => {
   return (
     <Layout>
-      <form className=":w-[50vw] mx-auto md:w-[80vh]  signup-card ">
+      <form className=":w-[50vw] mx-auto md:w-[80vh] sm:w-[50vw]  signup-card ">
         <div className="h-20 w-full  flex justify-center  "><h1 className="text-4xl mt-5">SignUp as a Teacher</h1></div>
         <div class="grid gap-6 mb-6 md:grid-cols-2 ">
           <div> 
@@ -185,7 +185,7 @@ const Signup = () => {
         </div>
         <button
           type="submit"
-          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm lg:w-[20vw] sm:w-auto lg:mx-20 px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
           Submit
         </button>
