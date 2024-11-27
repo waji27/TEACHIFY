@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { tutsearch } from "../components/tutsearch";
+import TutSearch from "../components/tutsearch";
 
 export default function TeacherCard({
   name = "Ali Siddiqui",
@@ -15,9 +15,11 @@ export default function TeacherCard({
 }) {
   return (
     <Layout>
-      <tutsearch />
-      <div class=" w-[70vw]  flex justify-center">
-        <div className="max-w-2xl rounded overflow-hidden shadow-lg bg-zinc-950">
+
+      <TutSearch />
+
+      <div className=" flex justify-start text-white lg:mx-20 p-10 sm:w-full ">
+        <div className="max-w-2xl rounded overflow-hidden shadow-lg  bg-black sm:w-full ">
           <div className="px-6 py-4">
             <div className="flex items-center mb-4">
               <img
