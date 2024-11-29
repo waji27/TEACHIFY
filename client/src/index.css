@@ -223,7 +223,7 @@ opacity: 70%;
 .signup-card {
     backdrop-filter: blur(25px) saturate(180%);
     -webkit-backdrop-filter: blur(25px) saturate(180%);
-    /* background-color: rgb(26, 26, 27); */
+    background-color: white;
     border-radius: 5px;
     /* border: 1px solid rgba(255, 255, 255, 0.125); */
 }
