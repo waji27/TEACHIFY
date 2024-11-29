@@ -4,7 +4,7 @@ import About from "./pages/About";
 import Login from './pages/Auth/Login';
 import Signup from './pages/Auth/Signup';
 import TeacherCard from './pages/all-tutors'
-
+import Store from './pages/store'
 function App() {
   return (
     <>
@@ -14,6 +14,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/all-tutors" element={<TeacherCard />} />
+        <Route path="/store" element={<Store />} />
       </Routes>
     </>
 
